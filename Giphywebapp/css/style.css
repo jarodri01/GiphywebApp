@@ -35,17 +35,20 @@ div.input-group {
 }
 
 /* Create two equal columns that sits next to each other */
-.col {
- 
+.col{
   flex: 50%;
-  padding: 0 4px;
+  margin-bottom: auto;
+  padding: 3 4px;
 }
 
 .col img{
-  margin-top: 8px;
+  margin-top: 10px;
+  
   vertical-align: middle;
 }
-
+a.nav-link{
+  color: #fff;
+}
 /* Style the buttons */
 .btn-group  { 
     display: block; text-align: right; 
@@ -102,8 +105,5 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #EEEEEE;
-    color: #393e46;
     text-align: right;
-   
   }
