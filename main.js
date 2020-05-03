@@ -44,7 +44,15 @@
         images (img);
       });
     }
-  
+    $("a.nav-link").on("mouseover", function() {
+      $(this).css("color", "blue");
+  }).on("mouseout", function() {
+        $(this).css("color", "white");
+  });
+
+
+
+
        //Gif limit buttons
     //  $('#btn6').on('click', async function() {
     //     console.log('Get me 6 results!');
