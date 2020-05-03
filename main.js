@@ -1,6 +1,6 @@
 (function () {
     function giphySearchEngine(keyword, limit) {
-      return fetch(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=h5nEbFf0nz3FmKUhFMFajDQpM6ew66XF&limit=${limit}`)
+      return fetch(`https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=h5nEbFf0nz3FmKUhFMFajDQpM6ew66XF&limit=${limit}`)
         .then(response => response.json());
     }
 //h5nEbFf0nz3FmKUhFMFajDQpM6ew66XF// apikey 
