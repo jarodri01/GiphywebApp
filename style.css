@@ -4,6 +4,10 @@ body{
 font-family:
 'Bangers', cursive;
 color:#393e46;
+height: 100vh;
+display: grid;
+grid-template-rows: min-content auto min-content;
+text-align: center
 }
 /* color layout */
 .background{
@@ -18,36 +22,40 @@ div.input-group {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
 .header {
   text-align: center;
-  padding: 32px;
-}
-
-.row {
-  
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 10px;
+  height: 50px;
 }
 
 /* Create two equal columns that sits next to each other */
-.col{
-  flex: 50%;
-  margin-bottom: auto;
-  padding: 3 4px;
+
+img {
+  height: 200px;
+  max-width: 250px;
+  padding: 10px;
+  flex: 1 auto;
 }
 
-.col img{
-  margin-top: 10px;
-  
-  vertical-align: middle;
+#show {
+  background-color:#fff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
+
 a.nav-link{
   color: #fff;
+
+}
+.nav-color{
+  background-color: blue;
 }
 /* Style the buttons */
 .btn-group  { 
@@ -74,9 +82,7 @@ a.nav-link{
   background-color: #666;
   color: white;
 }
-.col-md-4{
-    widows: 100%;
-}
+
 .input-group{
     width: 200px;
     margin: 0 auto;
@@ -97,13 +103,17 @@ a.nav-link{
       max-width: 100%;
     }
   }
-  
+footer,
+div {
+  padding: 10px;
+}
 
 footer {
     display: block;
-    position: fixed;
+   
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 50%;
     text-align: right;
-  }
+}
